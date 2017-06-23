@@ -1,0 +1,179 @@
+.parallaxIndex {
+    background-image: url(../images/parallax1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.60;
+    margin-top: -2px;
+}
+
+.parallaxNews {
+    background-image: url(../images/parallax2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.80;
+    margin-top: -15px;
+}
+
+.boxParallax {
+    width: 100%;
+    background-color: white;
+    height: 550px;
+    text-align: center;
+    /*font-size: 50px;*/
+    /*line-height: 90px;*/
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.boxParallax2 {
+    width: 100%;
+    background-color: white;
+    height: 320px;
+    text-align: left;
+    color: white;
+    background-color: #25692c;
+    /*position: relative;*/
+}
+
+.boxSecretariaFotos {
+    width: 100%;
+    background-color: white;
+    height: 900px;
+    text-align: left;
+    color: white;
+    background-color: #25692c;
+    border-radius: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boxProfessores {
+    width: 90%;
+    background-color: white;
+    height: 500px;
+    text-align: left;
+    color: white;
+    background-color: #25692c;
+    border-radius: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boxPaisOuResponsaveis {
+    width: 80%;
+    background-color: white;
+    height: 400px;
+    text-align: left;
+    color: white;
+    background-color: #25692c;
+    border-radius: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.separadora {
+  background-color: white;
+  height: 950px;
+  background-color:#33b334;
+}
+
+.separadoraProfessores {
+  background-color: white;
+  height: 550px;
+  background-color:#33b334;
+}
+
+.boxFaleConosco {
+    width: 100%;
+    /*background-color: white;*/
+    height: 60px;
+    text-align: center;
+    color: white;
+    /*font-size: 50px;*/
+    /*line-height: 90px;*/
+}
+
+.boxPreencher {
+    position: absolute;
+    width: 420px;
+    background-color: white;
+    height: 400px;
+    text-align: left;
+    color: white;
+    background-color: #25692c;
+    border-radius: 5px;
+}
+
+
+.form-control{
+  min-width:100px;
+  max-width: 300px;
+}
+
+input {color:black;}
+
+
+.boxUmH1 {
+  color: green
+}
+
+.boxBottom {
+  margin-left: 15px;
+}
+
+
+@media screen and (min-width: 1025px) {
+  .boxParallax {height: 100%!important;}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+  .boxParallax, .boxSecretariaFotos {height: 100%!important; font-size: 120%!important;}
+
+  .imageBottom1 {opacity: 0!important;}
+
+  .imageBottom2 {
+    opacity:0!important;
+  }
+
+  .secretariaImg {width: 90%!important;}
+
+  .separadora {height: 250px;}
+
+  .separadoraProfessores {height: 250px;}
+
+  .boxParallax2 {height: 400px;}
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+	.boxParallax, .boxSecretariaFotos {height: 100%!important; font-size: 120%!important;}
+
+  .imageBottom1 {
+    opacity: 0!important;
+  }
+
+  .imageBottom2 {
+    opacity: 0!important;
+  }
+
+  .secretariaImg {width: 90%!important;}
+
+  .separadora {height: 250px;}
+
+  .separadoraProfessores {height: 250px;}
+
+  .boxParallax2 {height: 400px;}
+
+}
