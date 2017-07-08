@@ -1,3 +1,7 @@
+body {
+  //background-color: #F3BA23;
+}
+
 a.left.carousel-control {
   height: 100%!important;
 }
@@ -26,6 +30,18 @@ a.right.carousel-control {
   //cor branca no link
 }
 
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: #BB8800;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #F8D47E!important;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #58475B;
+}
+
 .navbar-inverse .navbar-brand:hover {
   color: #9d9d9d!important;
 }
@@ -34,21 +50,68 @@ a.right.carousel-control {
   color: white!important;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
-  color: #9d9d9d!important;
-}
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: #B79200;
-  border-color: #B79200;
-}
-
 .panel-default>.panel-heading {
   background-color: #58475B!important;
   color: white!important;
 }
 
 .panel-body {
-  background-color: gray!important;
+  background-color: #BB8800!important;
   color: white!important;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #fff!important;
+}
+
+.textoDescricao {
+  padding-left: 10%;
+  text-align: left;
+}
+
+.checkbox {
+  float: left!important;
+}
+
+.campos {
+  padding-top: 10px;
+  padding-left: 50%;
+}
+
+.total {
+  background-color: #BB8800;
+  height: 70px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+  float: right;
+  text-align: center;
+  font-size: 23px;
+  padding-top: 4px;
+}
+
+.moneyIco {
+  float: right;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+
+}
+
+.totalRS {
+  display: inline;
+  position: absolute;
+  margin-left: -5%;
+}
+
+#resultado {
+  color: black;
+}
+
+a {
+  color: #59475B;
+}
+
+a:hover  {
+  color: #8A6D8C;
 }

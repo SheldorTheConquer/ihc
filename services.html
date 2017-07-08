@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- external font -->
+    <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <title>HARD CANDY &copy;</title>
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="font-family: 'Sarina', cursive; font-size: 28px; margin-right: -6%;">HARD
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="height: 250%;margin-top: -25%;margin-left: -3%;" alt="">
+                <a class="navbar-brand" href="index.html" style="font-family: 'Dancing Script', cursive; font-size: 28px; margin-left: -12%;">candy</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">Sobre Nós</a>
+                    </li>
+                    <li class="active">
+                        <a href="services.html">Encomendas</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contatos</a>
+                    </li>
+
+<!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>-->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><img src="images/met1.png" style="width: 50px;heigth:50px;" alt=""> Encomendas
+                    <small>adquira nossos doces</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Encomendas</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Image Header -->
+
+        <!-- /.row -->
+
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Escolha o produto desejado</h2>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/um.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>BOLO</h4>
+                        <p>VALOR - R$ 20</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Chocolate<br>
+                              Morango<br>
+                              Baunilha
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="bol1" id="bol1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="bol2" id="bol2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="bol3" id="bol3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/dois.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>CUPCAKE</h4>
+                        <p>VALOR - R$ 10</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Chocolate <br>
+                              Morango <br>
+                              Baunilha <br>
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="cup1" id="cup1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="cup2" id="cup2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="cup3" id="cup3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/tres.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>MACARRONES</h4>
+                        <p>VALOR - R$ 12</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Chocolate <br>
+                              Morango <br>
+                              Baunilha
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="mac1" id="mac1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="mac2" id="mac2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="mac3" id="mac3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/quatro.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>BANANA SPLIT</h4>
+                        <p>VALOR - R$ 12</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Chocolate <br>
+                              Morango <br>
+                              Baunilha
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="ban1" id="ban1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="ban2" id="ban2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="ban3" id="ban3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/cinco.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>BRIGADEIRO</h4>
+                        <p>VALOR - R$ 2</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Tradicional <br>
+                              Beijinho <br>
+                              Cannabis
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="bri1" id="bri1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="bri2" id="bri2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="bri3" id="bri3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/seis.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>DONUTS</h4>
+                        <p>VALOR - R$ 7</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Chocolate <br>
+                              Morango <br>
+                              Baunilha
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="don1" id="don1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="don2" id="don2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="don3" id="don3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/sete.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>SUSPIROS</h4>
+                        <p>VALOR - R$ 1</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Tradicional <br>
+                              Limão <br>
+                              Laranja </label>
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="sus1" id="sus1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="sus2" id="sus2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="sus3" id="sus3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <span class="fa-stack fa-5x">
+                              <i><img src="images/encomenda/oito.jpg" style="border-radius:70px;height:120px;width:120px:" alt=""></i>
+                        </span>
+                    </div>
+                    <div class="panel-body">
+                        <h4>TORTAS</h4>
+                        <p>VALOR - R$ 20</p>
+                        <div class="textoDescricao">
+                          <div class="checkbox" >
+                              Tradicional <br>
+                              Coco <br>
+                              Baunilha
+                          </div>
+                          <div class="campos">
+                                <input type="number" value="0" name="tor1" id="tor1" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="tor2" id="tor2" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" /> <br>
+                                <input type="number" value="0" name="tor3" id="tor3" onblur="soma()" style="width: 75px; color: black; height:20px;" title="Quantidade" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+          <div class="total"><h3 class="totalRS">R$</h3>
+
+            <img class="moneyIco" src="images/money.png" alt="">
+            <h3 style="float: right;color: white;" id="resultado">
+              0
+            </h3>
+          </div>
+
+        <br><br>
+        <div class="row">
+            <div class="col-md-9">
+                <h3>Complete seu pedido</h3>
+                <h5 style="color:gray;">Conta para depósito: Banco do Brasil; <br>Agência: 22331-1; <br>Conta: 77777777-1</h5>
+                <hr>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Nome completo (<span style="color:red;">*</span>):</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, digite seu nome completo.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <label>Endereço completo (<span style="color:red;">*</span>):</label>
+                        <input name="endereco" type="text" class="form-control" id="msg" required data-validation-required-message="Por favor, digite seu en completo.">
+                        <p class="help-block"></p>
+                    </div>
+                    <div class="controls">
+                        <label>Complemento:</label>
+                        <input name="complemento" type="text" class="form-control" id="msg">
+                        <p class="help-block"></p>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Telefone (<span style="color:red;">*</span>):</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, digite seu telefone.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email (<span style="color:red;">*</span>):</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, digite seu email.">
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h5 style="color:gray;">(<span style="color:red;">*</span>) - CAMPOS OBRIGATÓRIOS</h5>
+
+                    <!-- For success/fail messages -->
+                    <div class="col-lg-10">
+
+                    </div>
+
+
+                    <div class="col-">
+                        <button type="submit" onclick="confirmar()" class="btn btn-primary" style="background-color: green;border-color: green; width:120px;padding:0!important;float: right;margin-left:10px;">ENVIAR PEDIDO</button>
+                        <button type="reset" class="btn btn-primary" style="background-color: red;border-color: red; width:67px;padding:0!important;float: right;">APAGAR</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+          <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; HARD CANDY 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      function confirmar()
+      {
+        var nome = sentMessage.name.value;
+        var email = sentMessage.email.value;
+        var endereco = sentMessage.endereco.value;
+        var telefone = sentMessage.phone.value;
+
+        if (nome=="") {
+          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
+        } else if (email=="") {
+          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
+        } else if (endereco==""){
+          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
+        } else if (telefone=="") {
+          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
+        } else {
+          alert("Encomenda feita com sucesso, aguarde o contato!");
+        }
+      }
+      function soma ()
+      {
+        //BOLO:
+        var b1 = parseInt(document.getElementById('bol1').value, 10);
+        var b2 = parseInt(document.getElementById('bol2').value, 10);
+        var b3 = parseInt(document.getElementById('bol3').value, 10);
+
+        //CUPCAKE
+        var c1 = parseInt(document.getElementById('cup1').value, 10);
+        var c2 = parseInt(document.getElementById('cup2').value, 10);
+        var c3 = parseInt(document.getElementById('cup3').value, 10);
+
+        //MACARRONES
+        var m1 = parseInt(document.getElementById('mac1').value, 10);
+        var m2 = parseInt(document.getElementById('mac2').value, 10);
+        var m3 = parseInt(document.getElementById('mac3').value, 10);
+
+        //BANANA SPLIT
+        var ba1 = parseInt(document.getElementById('ban1').value, 10);
+        var ba2 = parseInt(document.getElementById('ban2').value, 10);
+        var ba3 = parseInt(document.getElementById('ban3').value, 10);
+
+        //BRIGADEIRO
+        var br1 = parseInt(document.getElementById('bri1').value, 10);
+        var br2 = parseInt(document.getElementById('bri2').value, 10);
+        var br3 = parseInt(document.getElementById('bri3').value, 10);
+
+        //DONUTS
+        var d1 = parseInt(document.getElementById('don1').value, 10);
+        var d2 = parseInt(document.getElementById('don2').value, 10);
+        var d3 = parseInt(document.getElementById('don3').value, 10);
+
+        //SUSPIROS
+        var s1 = parseInt(document.getElementById('sus1').value, 10);
+        var s2 = parseInt(document.getElementById('sus2').value, 10);
+        var s3 = parseInt(document.getElementById('sus2').value, 10);
+
+        //TORTAS
+        var t1 = parseInt(document.getElementById('tor1').value, 10);
+        var t2 = parseInt(document.getElementById('tor2').value, 10);
+        var t3 = parseInt(document.getElementById('tor3').value, 10);
+
+        var soma = ((b1*20+b2*20+b3*20)+(c1*10+c2*10+c3*10)+(m1*12+m2*12+m3*12)+(ba1*12+ba2*12+ba3*12)+(br1*2+br2*2+br3*2)+(d1*7+d2*7+d3*7)+(s1+s2+s3)+(t1*20+t2*20+t3*20));
+
+
+        document.getElementById('resultado').innerHTML = soma;
+
+      }
+      </script>
+
+</body>
+
+</html>
