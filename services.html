@@ -338,40 +338,30 @@
         <div class="row">
             <div class="col-md-9">
                 <h3>Complete seu pedido</h3>
-                <h5 style="color:gray;">Conta para depósito: Banco do Brasil; <br>Agência: 22331-1; <br>Conta: 77777777-1</h5>
                 <hr>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Nome completo (<span style="color:red;">*</span>):</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, digite seu nome completo.">
-                            <p class="help-block"></p>
-                        </div>
+                <form id="check">
+
+                    <div class="form-group">
+                        <label class="text-heading">Nome completo (<span style="color: red;">*</span>):</label>
+                        <input type="text" class="form-control" placeholder="Seu nome" required name="nome">
                     </div>
-                    <div class="controls">
-                        <label>Endereço completo (<span style="color:red;">*</span>):</label>
-                        <input name="endereco" type="text" class="form-control" id="msg" required data-validation-required-message="Por favor, digite seu en completo.">
-                        <p class="help-block"></p>
+                    <div class="form-group">
+                        <label class="text-heading">Email (<span style="color: red;">*</span>):</label>
+                        <input type="email" class="form-control" placeholder="nome@provedor.com" required name="email">
                     </div>
-                    <div class="controls">
-                        <label>Complemento:</label>
-                        <input name="complemento" type="text" class="form-control" id="msg">
-                        <p class="help-block"></p>
+                    <div class="form-group">
+                      <label>Endereço completo (<span style="color:red;">*</span>):</label>
+                      <input type="text" class="form-control" placeholder="Ex.: Rua Santo Antônio, Nº 110" required name="adress">
                     </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Telefone (<span style="color:red;">*</span>):</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, digite seu telefone.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email (<span style="color:red;">*</span>):</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, digite seu email.">
-                        </div>
+                    <div class="form-group">
+                      <label class="text-heading">Telefone (<span style="color:red;">*</span>):</label>
+                      <input type="text" name="mascaraTel" class="form-control" maxlength="15" id="mascaraTel" placeholder="(84) 0000-0000" required name="mascaraTel">
                     </div>
 
                     <hr>
+                    <h5 style="color:gray;">Conta para depósito: Banco do Brasil; <br>Agência: 22331-1; <br>Conta: 77777777-1</h5>
+                    <hr>
+
                     <h5 style="color:gray;">(<span style="color:red;">*</span>) - CAMPOS OBRIGATÓRIOS</h5>
 
                     <!-- For success/fail messages -->
@@ -381,8 +371,8 @@
 
 
                     <div class="col-">
-                        <button type="submit" onclick="confirmar()" class="btn btn-primary" style="background-color: green;border-color: green; width:120px;padding:0!important;float: right;margin-left:10px;">ENVIAR PEDIDO</button>
-                        <button type="reset" class="btn btn-primary" style="background-color: red;border-color: red; width:67px;padding:0!important;float: right;">APAGAR</button>
+                        <button type="submit" class="btn btn-primary" style="background-color: green;border-color: green; width:120px;padding:0!important;float: right;margin-left:10px;">ENVIAR PEDIDO</button>
+                        <button type="reset" class="btn btn-primary" style="background-color: red;border-color: red; width:130px;padding:0!important;float: right;">APAGAR CAMPOS</button>
                     </div>
                 </form>
             </div>
@@ -407,26 +397,39 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script>
-      function confirmar()
-      {
-        var nome = sentMessage.name.value;
-        var email = sentMessage.email.value;
-        var endereco = sentMessage.endereco.value;
-        var telefone = sentMessage.phone.value;
-
-        if (nome=="") {
-          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
-        } else if (email=="") {
-          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
-        } else if (endereco==""){
-          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
-        } else if (telefone=="") {
-          alert("ERRO! É necessário preencher informações obrigatórias para fazer a encomenda!");
-        } else {
-          alert("Encomenda feita com sucesso, aguarde o contato!");
+    <!-- MÁSCARA DE 9 DÍGITOS -->
+    <script type="text/javascript">
+        function mascaraTel(o, f) {
+            v_obj = o;
+            v_fun = f;
+            setTimeout(execmascara, 1);
         }
-      }
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+        function mtel(v) {
+            v=v.replace(/\D/g,"");
+            v=v.replace(/^(\d{2})(\d)/g,"($1) $2");
+            v=v.replace(/(\d)(\d{4})$/,"$1-$2");
+            return v;
+        }
+        function id(el) {
+            return document.getElementById(el);
+        }
+
+        window.onload = function() {
+            var $telefone = id('mascaraTel');
+            $telefone.onkeyup = function() {
+                mascaraTel( this, mtel );
+            }
+            $telefone.onblur = function() {
+                var v = this.value;
+                    if( v.indexOf('(11)') !== -1 && v.length === 14) {
+                        this.value = v.replace(/\((\d{2})\) (\d{4})-(\d{4})/g,'($1) 9$2-$3');
+                    }
+            }
+
+        }
       function soma ()
       {
         //BOLO:

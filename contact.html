@@ -68,30 +68,6 @@
                         <a href="contact.html">Contatos</a>
                     </li>
 
-<!--
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>-->
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
@@ -117,12 +93,13 @@
         <!-- Content Row -->
         <div class="row">
             <!-- Map Column -->
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <!-- Embedded Google Map -->
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:700px;'><div id='gmap_canvas' style='height:400px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">embed google map</a></small></div><div><small><a href="http://proxysitereviews.com/instantproxies/">instant proxies</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-5.7992303,-35.20539229999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-5.7992303,-35.20539229999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Hard Candy</strong><br>Av. Prudente de Morais, 1869. Natal, RN<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:750px;'><div id='gmap_canvas' style='height:400px;width:750px;'></div><div><small><a href="http://embedgooglemaps.com">embed google map</a></small></div><div><small><a href="http://www.proxysitereviews.com /lime-proxies/">lime proxies</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-5.7992303,-35.20539229999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-5.7992303,-35.20539229999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Hard Candy</strong><br>Av. Prudente de Morais, 1869. Natal, RN.<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
             </div>
+
             <!-- Contact Details Column -->
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <h3>Mais detalhes</h3>
                 <hr>
                 <p>
@@ -130,12 +107,12 @@
                 </p>
 
                 <p><i class="fa fa-phone"></i>
-                    <abbr title="Phone">Telefone</abbr>: (84) 6666-6666 </p>
+                    <abbr title="Telefone">Telefone</abbr>: (84) 6666-6666 </p>
                 <p><i class="fa fa-envelope-o"></i>
                     <abbr title="Email">Email</abbr> - <a href="mailto:name@example.com">albuquerque.gabriel@escolar.ifrn.edu.br</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i>
-                    <abbr title="Hours">Horário</abbr> - Segunda à Sexta: 9h às 17h</p>
+                    <abbr title="Horário de Atendimento">Horário</abbr> - Segunda à Sexta: 9h às 17h</p>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -160,52 +137,32 @@
             <div class="col-md-9">
                 <h3>Mande-nos uma mensagem</h3>
                 <hr>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Nome completo (<span style="color:red;">*</span>):</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, digite seu nome completo.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Telefone:</label>
-                            <input type="tel" class="form-control" id="phone">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email (<span style="color:red;">*</span>):</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, digite seu email.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Mensagem:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor, digite sua mensagem." maxlength="999" style="resize:none"></textarea>
-                        </div>
-                    <br>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Comprovante ou outro anexo:</label>
-                            <input name="arquivo" type="file">
-                          </div>
-                    </div>
-                    <h5 style="color:gray;">(<span style="color:red;">*</span>) - CAMPOS OBRIGATÓRIOS</h5>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <div class="col-lg-10">
+                <form id="check">
 
+                    <div class="form-group">
+                        <label class="text-heading">Nome (<span style="color: red;">*</span>):</label>
+                        <input type="text" class="form-control" placeholder="Seu nome" required name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-heading">Email (<span style="color: red;">*</span>):</label>
+                        <input type="email" class="form-control" placeholder="nome@provedor.com" required name="email">
+                    </div>
+                    <div class="form-group">
+                      <label class="text-heading">Telefone:</label>
+                      <input type="text" name="mascaraTel" class="form-control" maxlength="15" id="mascaraTel" placeholder="(84) 0000-0000">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group">
+                        <label class="text-heading">Mensagem (<span style="color: red;">*</span>):</label>
+                        <textarea class="form-control" rows="6" placeholder="Sua mensagem" required name="mensagem"></textarea>
+                        <br> <p style="color: gray;">(<span style="color: red;">*</span>) - CAMPO OBRIGATÓRIO</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary" style="background-color: green;border-color: green; width:67px;padding:0!important;float: right;margin-left:10px;">ENVIAR</button>
+                        <button type="reset" class="btn btn-primary" style="background-color: red;border-color: red; width:130px;padding:0!important;float: right;">APAGAR CAMPOS</button>
                     </div>
 
-
-                      <div class="col-">
-                          <button type="submit" onclick="confirmar()" class="btn btn-primary" style="background-color: green;border-color: green; width:67px;padding:0!important;float:right;margin-left:10px;">ENVIAR</button>
-                          <button type="reset" class="btn btn-primary" style="background-color: red;border-color: red; width:67px;padding:0!important;float:right;">APAGAR</button>
-                      </div>
-                </form>
+            </form>
             </div>
 
         </div>
@@ -231,26 +188,48 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+
+    <!-- MÁSCARA DE 9 DÍGITOS -->
+    <script type="text/javascript">
+        function mascaraTel(o, f) {
+            v_obj = o;
+            v_fun = f;
+            setTimeout(execmascara, 1);
+        }
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+        function mtel(v) {
+            v=v.replace(/\D/g,"");
+            v=v.replace(/^(\d{2})(\d)/g,"($1) $2");
+            v=v.replace(/(\d)(\d{4})$/,"$1-$2");
+            return v;
+        }
+        function id(el) {
+            return document.getElementById(el);
+        }
+
+        window.onload = function() {
+            var $telefone = id('mascaraTel');
+            $telefone.onkeyup = function() {
+                mascaraTel( this, mtel );
+            }
+            $telefone.onblur = function() {
+                var v = this.value;
+                    if( v.indexOf('(11)') !== -1 && v.length === 14) {
+                        this.value = v.replace(/\((\d{2})\) (\d{4})-(\d{4})/g,'($1) 9$2-$3');
+                    }
+            }
+
+        }
+    </script>
+
+
+
     <!-- Contact Form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <!--<script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>-->
-
-    <script>
-      function confirmar()
-      {
-        var nome = sentMessage.name.value;
-        var email = sentMessage.email.value;
-
-        if (nome=="") {
-          alert("ERRO! É necessário preencher informações obrigatórias para enviar mensagem!");
-        } else if (email=="") {
-          alert("ERRO! É necessário preencher informações obrigatórias para enviar mensagem!");
-        } else {
-          alert("Mensagem enviada com sucesso!");
-        }
-      }
-      </script>
 
 </body>
 
