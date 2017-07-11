@@ -222,6 +222,11 @@
             }
 
         }
+		document.getElementById("check").addEventListener("submit", function(event){
+			event.preventDefault();
+			alert("Mensagem enviada com sucesso, aguarde o contato, obrigado!");
+			$('#check').trigger("reset");
+		});
     </script>
 
 

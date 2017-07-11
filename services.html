@@ -478,6 +478,12 @@
         document.getElementById('resultado').innerHTML = soma;
 
       }
+	  
+	  document.getElementById("check").addEventListener("submit", function(event){
+		event.preventDefault();
+		alert("Encomenda feita com sucesso, aguarde o contato, obrigado!");
+		$('#check').trigger("reset");
+		});
       </script>
 
 </body>
