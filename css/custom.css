@@ -115,3 +115,8 @@ a {
 a:hover  {
   color: #8A6D8C;
 }
+
+@font-face {
+  font-family: Modak;
+  src: url("../fonts/Modak.ttf") format("truetype");
+}
