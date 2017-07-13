@@ -362,7 +362,7 @@
     </div>
     <!-- /.container -->
 
-    <div class="modal fade">
+    <div class="modal fade" id="modalOK">
     <div class="modal-dialog">
          <div class="modal-content">
              <div class="modal-header">
@@ -378,6 +378,23 @@
          </div>
      </div>
  </div>
+
+ <div class="modal fade" id="modalNotOK">
+ <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+             <h4 class="modal-title">ERRO</h4>
+          </div>
+          <div class="modal-body">
+              <p>É necessário escolher algum produto para que a encomenda seja feita!</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+      </div>
+  </div>
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -418,13 +435,13 @@
             }
 
         }
+      var resultad=0;
       function soma ()
       {
         //BOLO:
         var b1 = parseInt(document.getElementById('bol1').value, 10);
         var b2 = parseInt(document.getElementById('bol2').value, 10);
         var b3 = parseInt(document.getElementById('bol3').value, 10);
-
         //CUPCAKE
         var c1 = parseInt(document.getElementById('cup1').value, 10);
         var c2 = parseInt(document.getElementById('cup2').value, 10);
@@ -460,21 +477,30 @@
         var t2 = parseInt(document.getElementById('tor2').value, 10);
         var t3 = parseInt(document.getElementById('tor3').value, 10);
 
-        var soma = ((b1*20+b2*20+b3*20)+(c1*10+c2*10+c3*10)+(m1*12+m2*12+m3*12)+(ba1*12+ba2*12+ba3*12)+(br1*2+br2*2+br3*2)+(d1*7+d2*7+d3*7)+(s1*1+s2*1+s3*1)+(t1*20+t2*20+t3*20));
+        resultad = ((b1*20+b2*20+b3*20)+(c1*10+c2*10+c3*10)+(m1*12+m2*12+m3*12)+(ba1*12+ba2*12+ba3*12)+(br1*2+br2*2+br3*2)+(d1*7+d2*7+d3*7)+(s1*1+s2*1+s3*1)+(t1*20+t2*20+t3*20));
 
 
-        document.getElementById('resultado').innerHTML = soma;
+        document.getElementById('resultado').innerHTML = resultad;
 
       }
 
-      function alertMessage() {
-        $('.modal').modal('show');
+      function alertMessageOK() {
+        $('#modalOK').modal('show');
+      }
+      function alertMessageNotOK() {
+        $('#modalNotOK').modal('show');
       }
 
       document.getElementById("check").addEventListener("submit", function(event){
   			event.preventDefault();
-        alertMessage();
-  			$('#check').trigger("reset");
+        if(resultad!=0) {
+          alertMessageOK();
+      		$('#check').trigger("reset");
+        }
+        else {
+          alertMessageNotOK();
+        }
+
   		});
       </script>
 
