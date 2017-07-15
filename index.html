@@ -177,9 +177,10 @@
                     <br>
                     <br>
                     <form>
-                    <div class="form-group">
 
+                        <div class="form-group">
                         <input type="text" class="form-control" style="width: 200px; display: inline;" placeholder="Seu nome" required name="nome">
+
                         <div class="estrelas" style="float: right; padding-top: 3px;">
                           <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
                           <label for="cm_star-1"><i class="fa fa-2x"></i></label>
@@ -382,7 +383,7 @@
               <h4 class="modal-title" style="text-align: center;">OBRIGADO!</h4>
            </div>
            <div class="modal-body">
-               <p>A nossa equipe agradece a sua avaliação, a sua avaliação significa muito para nós!</p>
+               <p>A nossa equipe agradece a sua avaliação, significa muito para nós!</p>
            </div>
            <div class="modal-footer">
                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -493,7 +494,6 @@
       $(document).ready(function () {
                   $('#avaliacao').on('click', function(e) {
                       e.preventDefault();
-                      $('#avaliacaoRapida').trigger("reset");
                       alertMessageAcaliacao();
             });
           });
