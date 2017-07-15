@@ -136,3 +136,18 @@ a:hover  {
   width:100%;
   position:absolute;
 }
+
+
+.estrelas input[type=radio] {
+  display: none;
+  cursor: pointer;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+  cursor: pointer;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+  cursor: pointer;
+}

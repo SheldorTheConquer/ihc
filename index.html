@@ -169,9 +169,35 @@
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-8">
                     <p>Copyright &copy; HARD CANDY 2017</p>
                 </div>
+                <div class="col-md-4">
+                    AVALIAÇÃO RÁPIDA - PARTICIPE
+                    <br>
+                    <br>
+                    <div class="form-group" id="avaliacaoRapida">
+
+                        <input type="text" class="form-control" style="width: 200px; display: inline;" placeholder="Seu nome" name="nome"/>
+                        <div class="estrelas" style="float: right; padding-top: 3px;">
+                          <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                          <label for="cm_star-1"><i class="fa fa-2x"></i></label>
+                          <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                          <label for="cm_star-2"><i class="fa fa-2x"></i></label>
+                          <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                          <label for="cm_star-3"><i class="fa fa-2x"></i></label>
+                          <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                          <label for="cm_star-4"><i class="fa fa-2x"></i></label>
+                          <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                          <label for="cm_star-5"><i class="fa fa-2x"></i></label>
+                          <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="padding-top: 10px; float: right;">
+                        <button type="submit" class="btn btn-primary" id="avaliacao" data-toggle="modal" data-target="#modal-mensagem" style="background-color: #58475B;border-color: #58475B; width:150px; padding: 0;">ENVIAR AVALIAÇÃO</button>
+                    </div>
+              </div>
             </div>
         </footer>
 
@@ -346,6 +372,24 @@
    </div>
 </div>
 
+<div class="modal fade" id="avaliacaoModal">
+  <div class="modal-dialog">
+       <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+              <h4 class="modal-title" style="text-align: center;">OBRIGADO!</h4>
+           </div>
+           <div class="modal-body">
+               <p>A nossa equipe agradece a sua avaliação, a sua avaliação significa muito para nós!</p>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+               <a href="services.html"><button type="button" class="btn btn-default" style="background-color: #58475B; color: white;">Encomendar</button></a>
+           </div>
+       </div>
+   </div>
+</div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -383,6 +427,10 @@
 
     function alertMessageTorta() {
       $('#tortaModal').modal('show');
+    }
+
+    function alertMessageAcaliacao() {
+      $('#avaliacaoModal').modal('show');
     }
 
     $(document).ready(function () {
@@ -438,6 +486,14 @@
                   $('#torta').on('click', function(e) {
                         e.preventDefault();
                         alertMessageTorta();
+            });
+          });
+
+      $(document).ready(function () {
+                  $('#avaliacao').on('click', function(e) {
+                      e.preventDefault();
+                      $('#avaliacaoRapida').trigger("reset");
+                      alertMessageAcaliacao();
             });
           });
 
